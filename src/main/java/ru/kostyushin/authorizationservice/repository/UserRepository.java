@@ -10,7 +10,6 @@ import java.util.Map;
 
 @Repository
 public class UserRepository {
-    private static final Map<String, List<Authorities>> userAuthoritiesMap = new HashMap<>();
 
     public List<Authorities> getUserAuthorities(String user, String password) {
         List<Authorities> authorities = new ArrayList<>();

@@ -4,9 +4,7 @@ import org.springframework.stereotype.Repository;
 import ru.kostyushin.authorizationservice.enums.Authorities;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Repository
 public class UserRepository {

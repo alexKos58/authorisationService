@@ -10,6 +10,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(InvalidCredentials.class)
     public ResponseEntity<String> handleInvalidCredentials(InvalidCredentials ex) {
+        System.out.println(ex.getMessage());
         return ResponseEntity.badRequest().body(ex.getMessage());
     }
 

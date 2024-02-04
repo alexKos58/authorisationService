@@ -6,11 +6,13 @@ target/
 
 ### IntelliJ IDEA ###
 .idea
-.mvn
+.mvn/
 *.iws
 *.iml
 *.ipr
 mvnw*
+mvnw
+mvnw.cmd
 
 ### NetBeans ###
 /nbproject/private/

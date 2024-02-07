@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 public class AuthorizationController {
-    AuthorizationService service;
+    private final AuthorizationService service;
 
     @GetMapping("/authorize")
     public List<Authorities> getAuthorities(@RequestParam("user") String user, @RequestParam("password") String password) {

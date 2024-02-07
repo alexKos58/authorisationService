@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class AuthorizationService {
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {
